@@ -1,0 +1,222 @@
+Create a complete final year B.Tech AI & Data Science project named:
+
+"FlyHappy: Instant Complaint Resolution for Stress-Free Air Travel"
+
+Goal:
+Build an AI-powered grievance redressal web application for airline passengers. The system should improve the traditional complaint process by using NLP, OCR, multilingual support, chatbot assistance, complaint categorization, priority prediction, media/document upload analysis, complaint tracking, and admin-side complaint management.
+
+Tech stack:
+- Frontend: HTML, CSS, JavaScript, Bootstrap
+- Backend: Python Flask
+- Database: MongoDB
+- AI/ML/NLP: Python, scikit-learn, pandas, numpy, nltk / spaCy
+- OCR: pytesseract, Pillow, OpenCV
+- Optional translation: googletrans or similar library
+- Charts/dashboard: Chart.js
+- Version-ready structure for future deployment
+
+Build the project as a clean, professional academic project with proper folder structure, comments, README, requirements.txt, sample dataset, and documentation support.
+
+Main modules to create:
+1. User complaint registration
+   - Complaint form with passenger details, flight number, PNR, airline, complaint type, description, date, source/destination
+   - Upload supporting documents/images
+   - Store complaint in MongoDB
+
+2. OCR-based document reader
+   - Extract text from uploaded boarding pass, ticket, invoice, or image proof
+   - Pre-fill fields where possible
+
+3. AI complaint classifier
+   - Classify complaint into categories such as:
+     delay, cancellation, baggage issue, refund, staff behaviour, seat issue, food issue, overbooking, service issue, other
+   - Use ML/NLP model for text classification
+
+4. Priority prediction
+   - Predict urgency level: Low / Medium / High
+   - Logic based on complaint type, keywords, duration, and sentiment
+
+5. Multilingual support
+   - Allow complaint input in English and optionally translate/support other Indian languages
+   - Keep implementation simple and practical
+
+6. Chatbot assistant
+   - Help users file complaints
+   - Suggest complaint category and needed documents
+   - FAQ support for airline grievance process
+
+7. Complaint tracking dashboard
+   - Show complaint ID, status, progress bar, timestamps
+   - Status flow: Submitted → Under Review → In Process → Resolved / Rejected
+
+8. Admin panel
+   - View all complaints
+   - Filter by airline, category, priority, date, status
+   - Update complaint status
+   - View uploaded files and extracted OCR text
+   - Analytics dashboard with charts
+
+9. Reports and analytics
+   - Complaint count by type
+   - Airline-wise complaint distribution
+   - Resolution trends
+   - Priority distribution
+
+10. Comparison support
+   - Existing system: traditional/manual grievance redressal
+   - Proposed system: AI-enabled FlyHappy platform
+   - Include clear comparison in documentation
+
+What to generate:
+A. Full project folder structure
+B. Backend Flask app with routes
+C. Frontend pages and templates
+D. MongoDB integration
+E. ML/NLP training script with sample dataset
+F. OCR integration module
+G. Complaint tracking logic
+H. Admin dashboard
+I. README with setup instructions
+J. requirements.txt
+K. sample .env.example
+L. sample dataset CSV for complaint classification
+M. seed script for sample complaints
+N. documentation-ready content sections for review submission
+
+Folder structure expected:
+- flyhappy/
+  - app.py
+  - config.py
+  - requirements.txt
+  - README.md
+  - .env.example
+  - static/
+    - css/
+    - js/
+    - uploads/
+  - templates/
+    - index.html
+    - register_complaint.html
+    - track_complaint.html
+    - dashboard.html
+    - admin_login.html
+    - admin_dashboard.html
+    - chatbot.html
+    - layout.html
+  - models/
+    - complaint_model.pkl
+    - vectorizer.pkl
+  - ml/
+    - train_model.py
+    - preprocess.py
+    - dataset.csv
+  - ocr/
+    - ocr_reader.py
+  - database/
+    - db.py
+    - seed_data.py
+  - utils/
+    - classifier.py
+    - priority.py
+    - translator.py
+    - helpers.py
+  - docs/
+    - project_abstract.md
+    - problem_statement.md
+    - objectives.md
+    - existing_system.md
+    - proposed_system.md
+    - methodology.md
+    - modules.md
+    - testing.md
+    - results.md
+    - conclusion.md
+
+Important academic requirements to support:
+1. Project must be suitable for Phase I and Phase II documentation.
+2. Include sections for:
+   - Area of research
+   - Literature survey
+   - Base paper identification
+   - Problem definition
+   - Hardware and software requirements
+   - Existing system design
+   - Existing work coding
+   - Results and discussion
+   - Limitations
+   - Proposed work
+   - Feasibility study
+   - Proposed system design
+   - Implementation
+   - System testing
+   - Comparison of existing and proposed work
+   - Performance evaluation
+   - Conclusion and future work
+3. Generate documentation text in simple academic language for each section.
+4. Make the project realistic and implementable for final year students.
+
+Also generate these review-support materials:
+- Review I content:
+  - title
+  - problem statement
+  - objectives
+  - initial literature survey placeholders
+  - project timeline / Gantt-style week plan
+- Review II content:
+  - system architecture
+  - methodology
+  - module design
+  - implementation progress format
+- Review III content:
+  - testing
+  - final results
+  - metrics
+  - conclusion and future work
+
+Include a simple system architecture description:
+User → Complaint Portal → OCR + NLP/ML Engine → MongoDB → Admin Dashboard → Status Tracking
+
+Also generate:
+- sample UML/use case description
+- block diagram explanation
+- testing cases table
+- sample results tables
+- performance metrics such as accuracy, precision, recall, F1-score for complaint classification
+
+Coding expectations:
+- Clean and runnable Flask project
+- Minimal but attractive UI
+- Use Jinja templates
+- Use Bootstrap cards/forms/tables
+- Proper form validation
+- Error handling for file upload and OCR
+- Simple admin authentication for demo
+- Clear comments in code
+
+For ML:
+- Use TF-IDF + Logistic Regression or Naive Bayes
+- Train on sample complaint dataset
+- Save model and vectorizer
+- Load model inside Flask app for prediction
+
+For OCR:
+- Accept image or PDF/image-like files if practical
+- Extract text using pytesseract
+- Use extracted text to assist complaint filing
+
+For documentation:
+Generate markdown files with content that I can directly expand into my project report.
+
+Do not keep anything as vague placeholders unless absolutely necessary.
+Where real academic content is needed, write draft content.
+Where diagrams are needed, describe them clearly in text form so I can later convert them into figures.
+
+At the end, provide:
+1. complete folder structure
+2. all source code files
+3. dataset sample
+4. setup steps
+5. how to run locally
+6. suggested next improvements
+
+Make the project practical, student-friendly, and ready for college review submission.
